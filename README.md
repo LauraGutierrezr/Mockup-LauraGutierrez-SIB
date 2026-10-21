@@ -1,4 +1,4 @@
-# Catálogo SIB · mockup navegable
+# Catálogo SIB mockup navegable
 
 # Laura Valentina Gutierrez - proyecto SIB
 
