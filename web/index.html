@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catálogo SIB · Prototipo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="demobar">
+  <div class="demobar-in">
+    <span class="demotag"><b>DEMO</b>Catálogo SIB</span>
+    <nav class="scenes" id="scenes" aria-label="Escenas de la demo"></nav>
+    <div class="demo-ctl">
+      <span class="clock" id="clock">mar 20 oct · 10:20</span>
+      <label for="role">Ver como
+        <select id="role">
+          <option value="lector">Lector · todo TI</option>
+          <option value="tecnico" selected>Técnico · SIB / Plataforma</option>
+          <option value="restringido">Restringido · Arquitectura / DBA</option>
+          <option value="lider">Líder técnico (aprueba)</option>
+        </select>
+      </label>
+      <button class="btn sm" id="resetDemo" type="button">Reiniciar demo</button>
+      <button class="switch" id="bsToggle" aria-pressed="true" type="button">Detrás de escena</button>
+    </div>
+  </div>
+</header>
+
+<div class="frame">
+  <main class="stage" id="stage"></main>
+  <aside class="backstage" id="backstage" aria-label="Detrás de escena">
+    <div class="bs-head"><h3>Detrás de escena</h3><button class="btn sm ghost" id="bsClear" type="button">Limpiar</button></div>
+    <div class="bs-pieces">
+      <span class="piece p1">1 Colector</span><span class="piece p2">2 API</span><span class="piece p3">3 Worker</span><span class="piece p4">4 Base de datos</span><span class="piece p5">5 Web</span>
+    </div>
+    <div class="bs-log" id="bsLog"></div>
+  </aside>
+</div>
+<div id="toastHost"></div>
+<script src="app.js"></script>
+</body>
+</html>
